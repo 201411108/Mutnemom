@@ -7,6 +7,7 @@ function styling() {
     nameDiv.classList.add(HIDE)
     mainContent.classList.add(SHOW)
     mainContent.classList.add(FLEX)
+    todoDiv.classList.add(SHOW)
 }
 
 function submitHandler(e) {
@@ -30,6 +31,7 @@ function init() {
         title.innerText = `Welcome! ${userName}`
     } else {
         mainContent.classList.add(HIDE)
+        todoDiv.classList.add(HIDE)
     }
 
     title.addEventListener('click', clickHandler)

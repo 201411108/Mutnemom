@@ -7,6 +7,11 @@ const nameDiv = document.querySelector('.name-div')
 const nameForm = document.querySelector('.name-form')
 const nameInput = document.querySelector('.name-input')
 
+const todoDiv = document.querySelector('.todo-div')
+const todoForm = document.querySelector('.todo-form')
+const todoTask = document.querySelector('.todo-task')
+const todoDate = document.querySelector('.todo-date')
+
 const mainContent = document.querySelector('.main-content')
 const today = document.querySelector('.today')
 const todayTodoDiv = document.querySelector('.today-todo-div')
@@ -23,3 +28,5 @@ const USER_NAME = 'user_name'
 const HIDE = 'hiding'
 const SHOW = 'showing'
 const FLEX = 'flex'
+const CURRENT_TODO = 'current_todo'
+const FINISH_TODO = 'finish_todo'
