@@ -19,7 +19,7 @@ function submitHandler(e) {
         nameInput.value = ''
         return
     }
-    input.nameInput = ''
+    nameInput.value = ''
 }
 
 function init() {
