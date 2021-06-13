@@ -1,31 +1,33 @@
-const enterDiv = document.querySelector('.name-div');
-const form = document.querySelector('.name-form')
-const input = document.querySelector('.name-input')
-
-let USER_NAME = 'user_name'
-let HIDE = 'hiding'
-let SHOW = 'showing'
+function styling() {
+    nameDiv.classList.add(HIDE)
+    mainContent.classList.add(SHOW)
+    mainContent.classList.add(FLEX)
+}
 
 function submitHandler(e) {
     e.preventDefault();
-    if(input.value !== '') {
-        enterDiv.classList.add(HIDE)
-        localStorage.setItem(USER_NAME, input.value)
+    if(nameInput.value !== '') {
+        styling()
+        localStorage.setItem(USER_NAME, nameInput.value)
+        title.innerText = `Hello! ${nameInput.value}`
     } else {
-        input.value = ''
+        nameInput.value = ''
         return
     }
-    input.value = ''
+    input.nameInput = ''
 }
 
 function init() {
     const userName = localStorage.getItem(USER_NAME)
 
     if(userName !== null) {
-        enterDiv.classList.add(HIDE)
+        styling()
+        title.innerText = `Welcome! ${userName}`
+    } else {
+        mainContent.classList.add(HIDE)
     }
 
-    form.addEventListener('submit', submitHandler)
+    nameForm.addEventListener('submit', submitHandler)
 }
 
 init()
