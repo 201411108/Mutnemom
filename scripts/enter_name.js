@@ -1,3 +1,8 @@
+function clickHandler() {
+    localStorage.removeItem(USER_NAME)
+    location.reload()
+}
+
 function styling() {
     nameDiv.classList.add(HIDE)
     mainContent.classList.add(SHOW)
@@ -27,6 +32,7 @@ function init() {
         mainContent.classList.add(HIDE)
     }
 
+    title.addEventListener('click', clickHandler)
     nameForm.addEventListener('submit', submitHandler)
 }
 
