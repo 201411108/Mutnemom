@@ -5,12 +5,24 @@ body {
   justify-content: center;
 }
 
+/* styling css */
 .hiding {
   display: none;
 }
 
 .showing {
   display: block;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* element property */
+.clock-div {
+  text-align: center;
 }
 
 .name-div {
@@ -24,6 +36,33 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .main-content {
 
+}
+
+/* animation */
+.fade-in {
+  animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  } to {
+    opacity: 10;
+  }
+}
+
+/* for todo remove, finish effect */
+.fade-out { 
+  animation: fadeOut 3s;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 10;
+  } to {
+    opacity: 0;
+  }
 }
