@@ -41,6 +41,10 @@ body {
 
 }
 
+.today-todo-ul {
+  padding: 0%;
+}
+
 /* animation */
 .fade-in {
   animation: fadeIn 3s;

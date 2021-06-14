@@ -15,7 +15,7 @@ const todoDate = document.querySelector('.todo-date')
 const mainContent = document.querySelector('.main-content')
 const today = document.querySelector('.today')
 const todayTodoDiv = document.querySelector('.today-todo-div')
-const todoTodoUl = document.querySelector('.today-todo-ul');
+const todayTodoUl = document.querySelector('.today-todo-ul');
 
 const weatherDiv = document.querySelector('.weather-div')
 
@@ -30,3 +30,7 @@ const SHOW = 'showing'
 const FLEX = 'flex'
 const CURRENT_TODO = 'current_todo'
 const FINISH_TODO = 'finish_todo'
+
+let ID = 0
+let CURRENT_TODO_LIST = []
+let FINISH_TODO_LIST = []
