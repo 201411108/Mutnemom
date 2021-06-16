@@ -1,3 +1,16 @@
+function deleteClickHandler(e) {
+    const button = e.target
+    const li = button.parentNode
+    todayTodoUl.remove(li)
+
+    console.log(li.id)
+    const filteredTodos = CURRENT_TODO_LIST.filter((todo) => {
+        return todo.id !== parseInt(li.id)
+    })
+    CURRENT_TODO_LIST = filteredTodos
+    localStorage.setItem(CURRENT_TODO, JSON.stringify(CURRENT_TODO_LIST))
+}
+
 function submitHandler(e) {
     e.preventDefault()
     const date = todoDate.value
@@ -9,20 +22,24 @@ function submitHandler(e) {
 }
 
 function paintTodo(task, date) {
-    const li = document.createElement("li");
-    const delBtn = document.createElement("button");
-    const span = document.createElement("span");
-    const newId = ++ID;
+    const li = document.createElement('li')
+    const delBtn = document.createElement('button')
+    const finBtn = document.createElement('button')
+    const span = document.createElement('span')
+    const newId = ++ID
 
-    delBtn.innerText = "del";
-    // delBtn.addEventListener("click", deleteClickHandler);
+    delBtn.innerText = 'del'
+    delBtn.addEventListener('click', deleteClickHandler)
+    finBtn.innerText = 'fin'
+    // finBtn.addEventListener('click', finishClickHanlder)
 
-    span.innerText = task;
+    span.innerText = task
     
-    li.appendChild(delBtn);
-    li.appendChild(span);
-    li.id = newId;
-    todayTodoUl.appendChild(li);
+    li.appendChild(span)
+    li.appendChild(delBtn)
+    li.appendChild(finBtn)
+    li.id = newId
+    todayTodoUl.appendChild(li)
     
     const todoObj = {
         id: newId,
@@ -30,8 +47,8 @@ function paintTodo(task, date) {
         date: date
     };
 
-    CURRENT_TODO_LIST.push(todoObj);
-    localStorage.setItem(CURRENT_TODO, JSON.stringify(CURRENT_TODO_LIST));
+    CURRENT_TODO_LIST.push(todoObj)
+    localStorage.setItem(CURRENT_TODO, JSON.stringify(CURRENT_TODO_LIST))
 }
 
 function init() {
