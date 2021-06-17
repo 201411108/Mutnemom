@@ -22,6 +22,8 @@ const weatherDiv = document.querySelector('.weather-div')
 const plan = document.querySelector('.plan')
 const upcomingDiv = document.querySelector('.upcoming-div')
 const timeMachineDiv = document.querySelector('.time-machine-div')
+const timeMachineTodoDiv = document.querySelector('.time-machine-todo-div')
+const timeMachineTodoUl = document.querySelector('.time-machine-todo-ul')
 
 // Properties
 const USER_NAME = 'user_name'
