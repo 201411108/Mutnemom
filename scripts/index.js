@@ -33,6 +33,5 @@ const FLEX = 'flex'
 const CURRENT_TODO = 'current_todo'
 const FINISH_TODO = 'finish_todo'
 
-let ID = 0
 let CURRENT_TODO_LIST = []
 let FINISH_TODO_LIST = []
