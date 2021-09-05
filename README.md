@@ -1,10 +1,14 @@
 # Mutnemom
 
-Nomadcoder's vanilla js course challenge practice
+### Abstract
+clone the `Momentum` extension in chrome with **VanillaJS**.
 
 <h3 align='center'>Technical specs</h3>
 <p align='center'>
-  <img src="https://img.shields.io/badge/-Javascript-informational"/>
+  <img src="https://img.shields.io/badge/-HTML-orange"/>
+  <img src="https://img.shields.io/badge/-CSS-blue"/>
+  <img src="https://img.shields.io/badge/-Javascript-yellow"/><br>
+  <img src="https://img.shields.io/badge/-fontawesome-informational"/>
 </p>
 
 ## Features
