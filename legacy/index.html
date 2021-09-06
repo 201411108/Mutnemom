@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+  <title>Mutnemom</title>
+  <meta charset="utf-8"/>
+  <link rel="stylesheet" href="index.css"/>
+</head>
+<body>
+  <div class='clock-div fade-in'>
+    <h1 class='title'>Welcome! Please tell me who you are!</h1>
+    <h2 class='clock'></h2>
+  </div>
+  <div class='name-div'>
+    <form class='name-form'>
+      <input class='name-input' type='text' placeholder='What is your name?'>
+    </form>
+  </div>
+  <div class='todo-div'>
+    <form class='todo-form'>
+      <input class='todo-date' type="date">
+      <input class='todo-task' type="text" placeholder='Enter task'>
+    </form>
+  </div>
+  <div class='main-content'>
+    <div class='today'>
+      <h3>Today</h3>
+      <div class='today-todo-div'>
+        <ul class='today-todo-ul'></ul>
+      </div>
+      <div class='weather-div'>weather</div>
+    </div>
+    <div class='plan'>
+      <div class='upcoming-div'>
+        <h3>Upcoming</h3>
+      </div>
+      <div class='time-machine-div'>
+        <h3>Time machine</h3>
+        <div class='time-machine-todo-div'>
+          <ul class='time-machine-todo-ul'></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src='./scripts/index.js'></script>
+  <script src='./scripts/clock.js'></script>
+  <script src='./scripts/enter_name.js'></script>
+  <script src='./scripts/todo.js'></script>
+</body>
