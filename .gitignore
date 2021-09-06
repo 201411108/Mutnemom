@@ -2,8 +2,9 @@
 .DS_Store
 
 # solve security issues
-package-lock.json
-package.json
+node_modules/
+# package-lock.json
+# package.json
 
 # Created by https://www.gitignore.io/api/visualstudiocode
 # Edit at https://www.gitignore.io/?templates=visualstudiocode
