@@ -5,20 +5,19 @@
 > 수정을 위한 준비 중입니다. 이전 코드는 `legacy` 폴더에서 확인할 수 있습니다.
 
 ## 🖇️ Contents
-1. [Technical Stack](#Stack)
-2. [Features](#Features)
-   1. [Clock](#1-Clock)
-   2. [Save/Load user name](#2-Save-and-Load-user-name)
-   3. [Todo List](#3-TODO-List)
+- [Mutnemom](#mutnemom)
+  - [🖇️ Contents](#️-contents)
+  - [💻 Stack](#-stack)
+  - [💡 Features](#-features)
+    - [1. Clock](#1-clock)
+    - [2. Save and Load user name](#2-save-and-load-user-name)
+    - [3. TODO List](#3-todo-list)
+    - [4. Future works](#4-future-works)
 
-<!-- <h3 align='center'>Desktop Preview</h3>
+<h3 align='center'>Preview</h3>
 <p align='center'>
-  <img src='./assets/preview_desktop.GIF'/>
+  <img src='./assets/preview.gif'/>
 </p>
-<h3 align='center'>Mobile Preview</h3>
-<p align='center'>
-  <img src='./assets/preview_mobile.GIF'/>
-</p> -->
 
 ## 💻 Stack
 <p>
